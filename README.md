@@ -1,73 +1,103 @@
-# José Nunes Lda - Portal Digital
+<div align="center">
 
-![Repsol Distributor](https://img.shields.io/badge/Repsol-Distributor-orange?style=for-the-badge)
-![React](https://img.shields.io/badge/React-19-blue?style=for-the-badge&logo=react)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.0-38B2AC?style=for-the-badge&logo=tailwind-css)
-![Vite](https://img.shields.io/badge/Vite-Fast-646CFF?style=for-the-badge&logo=vite)
+  <img src="public/img/jn_logo.png" alt="José Nunes Lda Logo" width="200" />
 
-Bem-vindo ao repositório oficial da renovada presença digital da **José Nunes Lda**, distribuidor oficial da Repsol em Gondomar e arredores. Esta aplicação web moderna foi desenvolvida para proporcionar uma experiência de utilizador premium, rápida e informativa.
+  # José Nunes Lda
+  
+  **Distribuidor Oficial Repsol | Gondomar • Rio Tinto • Valbom**
+
+  <p align="center">
+    <a href="#-funcionalidades">Funcionalidades</a> •
+    <a href="#-tech-stack">Tecnologias</a> •
+    <a href="#-como-começar">Começar</a> •
+    <a href="#-contactos">Contactos</a>
+  </p>
+
+  [![React](https://img.shields.io/badge/React-19-20232a?style=for-the-badge&logo=react)](https://react.dev/)
+  [![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.0-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
+  [![Vite](https://img.shields.io/badge/Vite-Fast-646CFF?style=for-the-badge&logo=vite)](https://vitejs.dev/)
+  [![Repsol](https://img.shields.io/badge/Repsol-Parceiro-orange?style=for-the-badge)](https://www.repsol.pt/)
+
+</div>
+
+<br />
+
+## 📋 Sobre o Projeto
+
+Bem-vindo ao repositório oficial da nova presença digital da **José Nunes Lda**. Esta aplicação web moderna foi desenvolvida para elevar a experiência dos nossos clientes, oferecendo uma forma rápida, intuitiva e elegante de consultar os nossos produtos e serviços.
+
+> "Energia que move o mundo com soluções sustentáveis e inovadoras."
+
+---
 
 ## 🚀 Funcionalidades
 
-*   **Design Premium e Responsivo**: Interface moderna construída com Tailwind CSS, adaptada para todos os dispositivos (Mobile-First).
-*   **Animações Fluídas**: Experiência visual enriquecida com `framer-motion` para transições suaves e micro-interações.
-*   **Catálogo de Produtos**: Apresentação clara de garrafas de gás (Butano/Propano) e Gasóleo de Aquecimento.
-*   **SEO Otimizado**: Gestão de meta-tags dinâmica com `react-helmet-async` para melhor indexação.
-*   **Performance**: Build ultrarrápido e Hot Module Replacement (HMR) powered by Vite.
+### 🎨 Experiência de Utilizador (UX/UI)
+- **Design Premium**: Interface sofisticada e limpa, focada na usabilidade.
+- **Responsividade Total**: Otimizado para telemóveis, tablets e computadores.
+- **Animações Suaves**: Transições fluidas com `framer-motion` que dão vida à aplicação.
+
+### 🛍️ Catálogo Digital
+- **Garrafas de Gás**: Informação detalhada sobre garrafas de Butano e Propano.
+- **Gasóleo de Aquecimento**: Página dedicada com benefícios e dicas de manutenção.
+- **Visualização Clara**: Imagens de alta qualidade e descrições precisas.
+
+### ⚡ Performance & S
+- **Carregamento Instantâneo**: Powered by Vite para uma navegação sem espera.
+- **SEO Otimizado**: Meta-tags dinâmicas para melhor visibilidade nos motores de busca.
+
+---
 
 ## 🛠️ Tech Stack
 
-Este projeto utiliza as tecnologias mais recentes do ecossistema React:
+Construído com as melhores ferramentas do ecossistema moderno:
 
-*   **Core**: [React 19](https://react.dev/) + [Vite](https://vitejs.dev/)
-*   **Estilos**: [Tailwind CSS](https://tailwindcss.com/)
-*   **Routing**: [React Router v7](https://reactrouter.com/)
-*   **Animações**: [Framer Motion](https://www.framer.com/motion/)
-*   **SEO**: [React Helmet Async](https://github.com/staylor/react-helmet-async)
+| Categoria | Tecnologia | Descrição |
+| :--- | :--- | :--- |
+| **Core** | ![React](https://img.shields.io/badge/-React_19-black?logo=react&logoColor=61DAFB) | Biblioteca de interface de última geração |
+| **Build Tool** | ![Vite](https://img.shields.io/badge/-Vite-black?logo=vite&logoColor=646CFF) | HMR instantâneo e builds otimizados |
+| **Estilos** | ![Tailwind](https://img.shields.io/badge/-Tailwind_CSS-black?logo=tailwindcss&logoColor=38B2AC) | Framework utilitário para design rápido |
+| **Animações** | ![Framer](https://img.shields.io/badge/-Framer_Motion-black?logo=framer&logoColor=white) | Biblioteca de animações poderosa |
+| **Routing** | ![Router](https://img.shields.io/badge/-React_Router-black?logo=react-router&logoColor=CA4245) | Navegação client-side robusta |
+
+---
 
 ## 🏁 Como Começar
 
-Siga estes passos para correr o projeto localmente:
+Siga estes passos para correr o projeto no seu computador:
 
-1.  **Clonar o repositório**
-    ```bash
-    git clone https://github.com/seu-usuario/josenunesreact.git
-    cd josenunesreact
-    ```
+```bash
+# 1. Clonar o repositório
+git clone https://github.com/seu-usuario/josenunesreact.git
 
-2.  **Instalar dependências**
-    ```bash
-    npm install
-    ```
+# 2. Entrar na pasta
+cd josenunesreact
 
-3.  **Iniciar servidor de desenvolvimento**
-    ```bash
-    npm run dev
-    ```
+# 3. Instalar dependências
+npm install
 
-4.  **Build para produção**
-    ```bash
-    npm run build
-    ```
-
-## 📂 Estrutura do Projeto
-
-```
-src/
-├── components/   # Componentes reutilizáveis (Hero, Navbar, Footer, etc.)
-├── data/         # Dados estáticos (Lista de produtos)
-├── layouts/      # Layouts principais da aplicação
-├── pages/        # Componentes de página (Home, Products, HeatingOil, etc.)
-└── main.jsx      # Ponto de entrada da aplicação
+# 4. Iniciar servidor local
+npm run dev
 ```
 
-## 📞 Contactos
-
-**José Nunes Lda**
-*   📍 Travessa da Fontela, 370, 4420-150 Gondomar
-*   📞 224 830 326
-*   📱 933 368 655 / 913 703 072
-*   ✉️ josenuneslda@gmail.com
+O servidor iniciará em `http://localhost:5173`.
 
 ---
-Desenvolvido com ❤️ para José Nunes Lda.
+
+## � Contactos
+
+Estamos sempre disponíveis para ajudar:
+
+<div align="center">
+
+| 📍 **Morada** | 📞 **Telefone** | 📱 **Telemóvel** | ✉️ **Email** |
+| :--- | :--- | :--- | :--- |
+| Travessa da Fontela, 370<br>4420-150 Gondomar | 224 830 326 | 933 368 655<br>913 703 072 | josenuneslda@gmail.com |
+
+</div>
+
+<br />
+
+<div align="center">
+  <sub>Desenvolvido com ❤️ para José Nunes Lda. © 2025</sub>
+</div>
