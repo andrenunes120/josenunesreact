@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+import { motion as Motion } from 'framer-motion';
 
 export default function ContactSection() {
     return (
@@ -10,7 +10,7 @@ export default function ContactSection() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
 
                     {/* Visite-nos Card */}
-                    <motion.div
+                    <Motion.div
                         initial={{ opacity: 0, x: -50 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true, margin: "-100px" }}
@@ -54,10 +54,10 @@ export default function ContactSection() {
                                 </iframe>
                             </div>
                         </div>
-                    </motion.div>
+                    </Motion.div>
 
                     {/* Fale Connosco Card */}
-                    <motion.div
+                    <Motion.div
                         initial={{ opacity: 0, x: 50 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true, margin: "-100px" }}
@@ -114,7 +114,7 @@ export default function ContactSection() {
                                 </div>
                             </div>
                         </div>
-                    </motion.div>
+                    </Motion.div>
                 </div>
             </div>
         </div>

@@ -1,10 +1,10 @@
 import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
+import { motion as Motion } from 'framer-motion';
 
 export default function ProductCard({ product }) {
     return (
         <Link to={`/products/${product.id}`} className="block h-full">
-            <motion.div
+            <Motion.div
                 whileHover={{ y: -8 }}
                 className="group relative flex h-full flex-col overflow-hidden rounded-3xl bg-white shadow-sm hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)] transition-shadow duration-500"
             >
@@ -13,7 +13,7 @@ export default function ProductCard({ product }) {
                     <div className="relative flex h-64 items-center justify-center bg-gray-50/50 p-8 transition-colors group-hover:bg-orange-50/30 overflow-hidden">
                         <div className="absolute inset-0 bg-gradient-to-br from-transparent to-gray-100/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
-                        <motion.img
+                        <Motion.img
                             src={`/img/${product.image}`}
                             alt={product.name}
                             className="relative z-10 max-h-full w-auto object-contain drop-shadow-md"
@@ -50,7 +50,7 @@ export default function ProductCard({ product }) {
                         </div>
                     </div>
                 </div>
-            </motion.div>
+            </Motion.div>
         </Link>
     );
 }

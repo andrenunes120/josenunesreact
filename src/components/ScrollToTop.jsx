@@ -5,9 +5,8 @@ export default function ScrollToTop() {
     const { pathname } = useLocation();
 
     useEffect(() => {
-        window.scrollTo(0, 0);
-        // Force scroll again slightly later to handle dynamic content/refresh
-        const timer = setTimeout(() => window.scrollTo(0, 0), 100);
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        const timer = setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 100);
         return () => clearTimeout(timer);
     }, [pathname]);
 

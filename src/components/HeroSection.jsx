@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
+import { motion as Motion } from 'framer-motion';
 
 export default function HeroSection() {
     return (
-        <div className="relative bg-repsol-darkBlue overflow-hidden">
+        <div className="relative bg-repsol-darkBlue">
             <div className="absolute inset-0">
-                <motion.div
+                <Motion.div
                     initial={{ scale: 1.1, opacity: 0 }}
                     animate={{ scale: 1, opacity: 0.4 }}
                     transition={{ duration: 1.5 }}
@@ -13,13 +13,13 @@ export default function HeroSection() {
                 >
                     <img src="/img/background1.jpg" alt="Repsol Background"
                         className="w-full h-full object-cover" />
-                </motion.div>
+                </Motion.div>
                 <div className="absolute inset-0 bg-gradient-to-r from-repsol-darkBlue via-repsol-darkBlue/90 to-transparent"></div>
             </div>
 
             <div className="relative max-w-7xl mx-auto pt-20 pb-32 px-4 sm:px-6 lg:px-8 flex flex-col justify-center min-h-[600px]">
                 <div className="max-w-3xl">
-                    <motion.div
+                    <Motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.2, duration: 0.8 }}
@@ -28,9 +28,9 @@ export default function HeroSection() {
                             className="inline-block py-1.5 px-4 rounded-full bg-repsol-orange/20 text-repsol-orange font-bold text-sm mb-8 border border-repsol-orange/30 backdrop-blur-sm shadow-[0_0_15px_rgba(255,130,0,0.3)]">
                             Concessionário Oficial José Nunes
                         </span>
-                    </motion.div>
+                    </Motion.div>
 
-                    <motion.h1
+                    <Motion.h1
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.4, duration: 0.8 }}
@@ -40,18 +40,18 @@ export default function HeroSection() {
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-repsol-orange via-yellow-400 to-repsol-orange bg-[200%_auto] animate-gradient">
                             Move o Seu Mundo
                         </span>
-                    </motion.h1>
+                    </Motion.h1>
 
-                    <motion.p
+                    <Motion.p
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.6, duration: 0.8 }}
                         className="mt-6 text-xl md:text-2xl text-gray-300 max-w-2xl leading-relaxed font-light"
                     >
                         Garrafas de gás Repsol com entrega <strong className="text-white font-semibold">rápida</strong>, <strong className="text-white font-semibold">segura</strong> e ao <strong className="text-white font-semibold">melhor preço</strong>.
-                    </motion.p>
+                    </Motion.p>
 
-                    <motion.div
+                    <Motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.8, duration: 0.8 }}
@@ -75,7 +75,7 @@ export default function HeroSection() {
                             className="px-8 py-4 bg-white/5 text-white font-bold rounded-2xl backdrop-blur-md border border-white/10 hover:bg-white/10 hover:border-white/30 transition-all duration-300 cursor-pointer shadow-lg hover:shadow-xl hover:-translate-y-1">
                             Saiba Mais
                         </a>
-                    </motion.div>
+                    </Motion.div>
                 </div>
             </div>
         </div>

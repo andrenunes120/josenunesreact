@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+import { motion as Motion } from 'framer-motion';
 import AppLayout from '../layouts/AppLayout';
 import SEO from '../components/SEO';
 import ContactSection from '../components/ContactSection';
@@ -44,9 +44,9 @@ export default function HeatingOil() {
             />
 
             {/* Hero Section */}
-            <div className="relative bg-repsol-darkBlue overflow-hidden">
+            <div className="relative bg-repsol-darkBlue">
                 <div className="absolute inset-0">
-                    <motion.div
+                    <Motion.div
                         initial={{ scale: 1.1, opacity: 0 }}
                         animate={{ scale: 1, opacity: 0.4 }}
                         transition={{ duration: 1.5 }}
@@ -57,12 +57,12 @@ export default function HeatingOil() {
                             alt="Gasóleo de Aquecimento Banner"
                             className="w-full h-full object-cover"
                         />
-                    </motion.div>
+                    </Motion.div>
                     <div className="absolute inset-0 bg-gradient-to-r from-repsol-darkBlue via-repsol-darkBlue/90 to-transparent"></div>
                 </div>
 
                 <div className="relative max-w-7xl mx-auto pt-32 pb-40 px-4 sm:px-6 lg:px-8 flex flex-col justify-center min-h-[500px]">
-                    <motion.div
+                    <Motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8 }}
@@ -80,14 +80,14 @@ export default function HeatingOil() {
                         <p className="text-xl text-gray-300 leading-relaxed max-w-2xl">
                             Descubra o gasóleo de aquecimento exclusivo da Repsol. Mais eficiência, maior poupança e melhor proteção para a sua instalação.
                         </p>
-                    </motion.div>
+                    </Motion.div>
                 </div>
             </div>
 
             {/* Benefits Section */}
             <div className="py-24 bg-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <motion.div
+                    <Motion.div
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
@@ -97,11 +97,11 @@ export default function HeatingOil() {
                         <p className="text-gray-600 max-w-2xl mx-auto">
                             Uma fórmula exclusiva patenteada que garante o máximo rendimento e durabilidade da sua caldeira.
                         </p>
-                    </motion.div>
+                    </Motion.div>
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
                         {benefits.map((benefit, index) => (
-                            <motion.div
+                            <Motion.div
                                 key={index}
                                 initial={{ opacity: 0, y: 20 }}
                                 whileInView={{ opacity: 1, y: 0 }}
@@ -116,7 +116,7 @@ export default function HeatingOil() {
                                 <p className="text-gray-600 leading-relaxed">
                                     {benefit.description}
                                 </p>
-                            </motion.div>
+                            </Motion.div>
                         ))}
                     </div>
                 </div>
@@ -166,7 +166,7 @@ export default function HeatingOil() {
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">Perguntas Frequentes</h2>
                     <div className="space-y-6">
-                        <motion.div
+                        <Motion.div
                             initial={{ opacity: 0, y: 10 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
@@ -177,9 +177,9 @@ export default function HeatingOil() {
                                 Todas as caldeiras de gasóleo podem utilizar o nosso gasóleo de aquecimento. Sejam antigas ou modernas, domésticas ou industriais.
                                 O produto é compatível com equipamentos de última geração, incluindo caldeiras de condensação.
                             </p>
-                        </motion.div>
+                        </Motion.div>
 
-                        <motion.div
+                        <Motion.div
                             initial={{ opacity: 0, y: 10 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
@@ -191,9 +191,9 @@ export default function HeatingOil() {
                                 Sim, o nosso gasóleo de aquecimento é perfeitamente miscível com outros gasóleos de aquecimento.
                                 Pode ser adicionado ao tanque mesmo que este ainda contenha outro tipo de gasóleo, sem qualquer risco para a sua instalação.
                             </p>
-                        </motion.div>
+                        </Motion.div>
 
-                        <motion.div
+                        <Motion.div
                             initial={{ opacity: 0, y: 10 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
@@ -212,7 +212,7 @@ export default function HeatingOil() {
                                     Ligar Agora
                                 </a>
                             </div>
-                        </motion.div>
+                        </Motion.div>
                     </div>
                 </div>
             </div>

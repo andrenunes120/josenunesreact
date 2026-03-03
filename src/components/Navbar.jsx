@@ -20,7 +20,7 @@ export default function Navbar() {
                     {/* MENU DESKTOP */}
                     <div className="hidden sm:flex sm:items-center sm:ms-8 space-x-8">
                         <Link to="/" onClick={() => window.scrollTo(0, 0)} className="relative text-gray-700 hover:text-repsol-orange px-1 py-2 text-base font-semibold transition-colors duration-300 group">
-                            Home
+                            Início
                             <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-repsol-orange transition-all duration-300 group-hover:w-full"></span>
                         </Link>
                         <Link to="/products" className="relative text-gray-700 hover:text-repsol-orange px-1 py-2 text-base font-semibold transition-colors duration-300 group">
@@ -64,7 +64,7 @@ export default function Navbar() {
                         onClick={() => setOpen(false)}
                         className="block w-full ps-6 pe-4 py-3 border-l-4 border-transparent text-start text-base font-semibold text-gray-600 hover:text-repsol-orange hover:bg-orange-50 hover:border-repsol-orange transition duration-300"
                     >
-                        Home
+                        Início
                     </Link>
                     <Link
                         to="/products"

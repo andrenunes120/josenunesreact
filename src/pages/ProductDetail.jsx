@@ -37,7 +37,7 @@ export default function ProductDetail() {
 
                     {/* Breadcrumb */}
                     <nav className="flex mb-8 text-sm text-gray-500">
-                        <Link to="/" className="hover:text-orange-600 transition">Home</Link>
+                        <Link to="/" className="hover:text-orange-600 transition">Início</Link>
                         <span className="mx-2">/</span>
                         <Link to="/products" className="hover:text-orange-600 transition">Produtos</Link>
                         <span className="mx-2">/</span>

@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import ProductCard from './ProductCard';
-import { motion } from 'framer-motion';
+import { motion as Motion } from 'framer-motion';
 
 export default function FeaturedProducts({ products }) {
     const container = {
@@ -19,12 +19,12 @@ export default function FeaturedProducts({ products }) {
     };
 
     return (
-        <div className="bg-white py-16 relative overflow-hidden">
+        <div className="bg-white py-16 relative">
             {/* Decorative blob */}
             <div className="absolute top-0 right-0 -mr-20 -mt-20 w-64 h-64 rounded-full bg-orange-50 blur-3xl opacity-60 pointer-events-none"></div>
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-                <motion.div
+                <Motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, margin: "-100px" }}
@@ -33,11 +33,11 @@ export default function FeaturedProducts({ products }) {
                 >
                     <h2 className="text-4xl font-extrabold text-gray-900 sm:text-5xl mb-4 tracking-tight">Destaques</h2>
                     <p className="mt-4 text-xl text-gray-500 max-w-2xl mx-auto">
-                        Confira a nossa seleção de produtos <span className="text-repsol-orange font-semibold">premium</span> para a sua casa.
+                        Veja a nossa seleção de produtos <span className="text-repsol-orange font-semibold">premium</span> para a sua casa.
                     </p>
-                </motion.div>
+                </Motion.div>
 
-                <motion.div
+                <Motion.div
                     variants={container}
                     initial="hidden"
                     whileInView="show"
@@ -45,13 +45,13 @@ export default function FeaturedProducts({ products }) {
                     className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10"
                 >
                     {products.map((product) => (
-                        <motion.div key={product.id} variants={item}>
+                        <Motion.div key={product.id} variants={item}>
                             <ProductCard product={product} />
-                        </motion.div>
+                        </Motion.div>
                     ))}
-                </motion.div>
+                </Motion.div>
 
-                <motion.div
+                <Motion.div
                     initial={{ opacity: 0, scale: 0.9 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     viewport={{ once: true }}
@@ -67,7 +67,7 @@ export default function FeaturedProducts({ products }) {
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                         </svg>
                     </Link>
-                </motion.div>
+                </Motion.div>
             </div>
         </div>
     );

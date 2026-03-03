@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import AppLayout from '../layouts/AppLayout';
 import ProductCard from '../components/ProductCard';
 import { products } from '../data/products';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion as Motion, AnimatePresence } from 'framer-motion';
 import SEO from '../components/SEO';
 
 export default function Products() {
@@ -40,12 +40,12 @@ export default function Products() {
                 description="Consulte o nosso catálogo de garrafas de gás butano e propano Repsol. Entregas em Gondomar, Rio Tinto, Valbom e Fânzeres."
                 keywords="gás repsol, produtos, butano, propano, k11, k6, gondomar"
             />
-            <div className="bg-white py-16 min-h-screen relative overflow-hidden">
+            <div className="bg-white py-16 min-h-screen relative">
                 {/* Decorative background element */}
                 <div className="absolute top-0 left-0 -ml-20 -mt-20 w-80 h-80 rounded-full bg-orange-50 blur-3xl opacity-50 pointer-events-none"></div>
 
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-                    <motion.div
+                    <Motion.div
                         initial={{ opacity: 0, y: -20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8 }}
@@ -55,10 +55,10 @@ export default function Products() {
                         <p className="mt-4 text-xl text-gray-500 max-w-2xl mx-auto">
                             Descubra a gama completa de garrafas de gás <span className="text-repsol-orange font-semibold">Repsol</span>, desenhadas para o seu conforto.
                         </p>
-                    </motion.div>
+                    </Motion.div>
 
                     {/* Filter Buttons */}
-                    <motion.div
+                    <Motion.div
                         initial={{ opacity: 0, y: 10 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.2, duration: 0.5 }}
@@ -76,12 +76,12 @@ export default function Products() {
                                 {cat.label}
                             </button>
                         ))}
-                    </motion.div>
+                    </Motion.div>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 min-h-[400px]">
                         <AnimatePresence mode='wait'>
                             {visibleProducts.map((product) => (
-                                <motion.div
+                                <Motion.div
                                     key={product.id}
                                     layout
                                     initial={{ opacity: 0, scale: 0.9 }}
@@ -90,7 +90,7 @@ export default function Products() {
                                     transition={{ duration: 0.3 }}
                                 >
                                     <ProductCard product={product} />
-                                </motion.div>
+                                </Motion.div>
                             ))}
                         </AnimatePresence>
                     </div>
@@ -111,7 +111,7 @@ export default function Products() {
                     )}
 
                     {/* Heating Oil Promo Section */}
-                    <motion.div
+                    <Motion.div
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
@@ -154,7 +154,7 @@ export default function Products() {
                                 </Link>
                             </div>
                         </div>
-                    </motion.div>
+                    </Motion.div>
                 </div>
             </div>
         </AppLayout>

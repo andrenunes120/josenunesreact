@@ -1,4 +1,4 @@
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from 'react-v19-helmet-async';
 
 export default function SEO({ title, description, keywords }) {
     const siteTitle = "José Nunes";

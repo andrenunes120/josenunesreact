@@ -5,13 +5,13 @@ import AppLayout from '../layouts/AppLayout';
 import { getFeaturedProducts } from '../data/products';
 import SEO from '../components/SEO';
 
-export default function Home() {
+export default function Inicio() {
     const featured = getFeaturedProducts(4);
 
     return (
         <AppLayout>
             <SEO
-                title="Home"
+                title="Início"
                 description="José Nunes Lda - Distribuidor oficial de gás Repsol em Gondomar. Entregas ao domicílio de garrafas de gás e assistência técnica."
             />
             <HeroSection />
